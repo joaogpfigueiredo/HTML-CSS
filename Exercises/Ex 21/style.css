@@ -1,0 +1,43 @@
+@charset "UTF-8";
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+
+    /* 
+    Medidas Absolutas
+
+    cm, mm, in (pulgada), px, pt, pc;
+
+    Medidas Relativas
+
+    em, ex, rem, vw, vh, %;
+    16px = 1em;
+    
+    */
+    font-size: 1cm;
+
+    /* lighter bold bolder normal 100-900 */
+
+    font-weight: normal;
+
+    /* italic normal oblique */
+
+    font-style: normal;
+
+    /* dashed dotted double underline line-through none overline solid wavy */
+
+    text-decoration: none;
+}
+
+h1 {
+    /* font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    font-size: 3em;
+    font-style: italic;
+    
+    shorthand font
+    
+    - font-style -> font-weight -> font-size -> font-family */
+
+    font: italic bolder 3em Arial, Helvetica, sans-serif;
+}
