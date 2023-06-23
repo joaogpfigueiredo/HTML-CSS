@@ -10,14 +10,15 @@
 * {
     margin: 0px;
     padding: 0px;
-    font-family: Arial, Helvetica, sans-serif;
 }
 
-body {
+html, body {
     background-color: #555555;
+    min-height: 100vh;
 }
 
 header {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     background-color: #000000;
     color: #ffffff;
     text-align: center;
@@ -27,7 +28,8 @@ header {
 header > h1 {
     font-family: 'Passion One', cursive;
     font-weight: normal;
-    font-size: 3em;
+    font-size: 10vw;
+    font-variant: small-caps;
     padding: 2.5px;
 }
 
@@ -45,15 +47,43 @@ a:hover {
     text-decoration: underline;
 }
 
+section {
+    line-height: 2em;
+    font-family: 'Sriracha', cursive;
+    padding: 10vh 0vh 10vh 30px;
+    font-size: 3.5vw;
+}
+
+section.normal {
+    background-color: #ffffff;
+}
+
+section.imagem {
+    color: #ffffff;
+    background-size: cover;
+    background-position: right center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    box-shadow: inset 10px 10px 15px #00000084;
+}
+
+section.imagem > p {
+    display: inline-block;
+    background-color: #00000082;
+    text-shadow: 4px 4px 8px #00000076;
+}
+
+section#imagem1 {
+    background-image: url(imagens/background001.jpg);
+}
+
+section#imagem2 {
+    background-image: url(imagens/background002.jpg);
+}
+
 footer {
     background-color: #000000;
     color: #ffffff;
     text-align: center;
     padding: 5px;
-}
-
-section {
-    background-color: #ffffff;
-    padding: 10px;
-    line-break: ;
 }
