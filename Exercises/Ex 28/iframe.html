@@ -6,19 +6,41 @@
     <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
     <title>Estudos de iframe</title>
     <style>
-
         * {
             margin: 0px;
             padding: 0px;
         }
 
-        iframe {
-            width: 100vw;
-            height: 100vh;
+        body {
+            background-color: lightgrey;
+        }
+
+        iframe#cev { /* Tamanho padrão 300x150*/
+           height: 500px; 
+        }
+
+        iframe#repository {
+            height: 500px;
+            width: 500px;
+            border-radius: 10px;
+            margin-top: 40px;
         }
     </style>
 </head>
 <body>
-    <iframe src="https://cursoemvideo.com/" frameborder="1"></iframe>
+    <h1>Teste de iframes!</h1>
+    <hr>
+
+    <p>
+        Acessando o site do <iframe src="https://cursoemvideo.com/" frameborder="0" scolling="no" id="cev"> <!-- scolling="(auto | yes | no)" frameborder="(0 | 1)"-->
+            <a href="https://cursoemvideo.com/">Curso em Vídeo</a>
+        </iframe> para aprender a programar!
+    </p>
+
+    <p>
+        O meu <iframe src="https://joaogpfigueiredo.github.io/" frameborder="0" id="repository">
+            <a href="https://joaogpfigueiredo.github.io/">repositório</a>
+        </iframe> também é muito bom!
+    </p>
 </body>
 </html>
