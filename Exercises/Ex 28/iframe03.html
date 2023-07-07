@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+    <title>Uso de iframes</title>
+    <style>
+        * {
+            margin: 4px;
+            padding: 0px;
+            color: #ffffff;
+        }
+
+        body {
+            background-color: #444343;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        iframe#tela {
+            width: 95vw;
+            height: 400px;
+            margin: 10px;
+            border: 2px solid #000000;
+        }
+    </style>
+</head>
+<body>
+    <h1>Faça uma escolha</h1>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam cumque aliquid, odio ea odit delectus a minima eveniet recusandae? Doloribus suscipit sit cumque sunt voluptatem qui, dolorum eum rem hic.</p>
+
+    <ul>
+        <li><a href="paginas/pagina01.html" target="frame">Primeira Página</a></li>
+        <li><a href="paginas/pagina02.html" target="frame">Segunda Página</a></li>
+        <li><a href="paginas/pagina03.html" target="frame">Terceira Página</a></li>
+    </ul>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, voluptatum, eveniet laborum dolore, tempora animi non eius unde adipisci eaque nihil praesentium? Saepe, placeat voluptatem. Vel quis ratione consectetur deleniti! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque quidem cum quos nesciunt in pariatur consequatur minima vitae ullam ratione, quae doloribus natus aliquam animi, eos voluptas beatae voluptate nobis!</p>
+
+    <iframe id="tela" name="frame" 
+        srcdoc="
+        <h1>Faça a sua escolha!</h1> 
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, iste corporis nobis culpa quibusdam molestias unde saepe. Explicabo sequi minima beatae blanditiis, odio repellendus ipsa ullam facilis, eveniet dolorem hic?</p> 
+        <img src='imagens/imagem01.jpg'></img>
+        " frameborder="0">
+        <p>O navegador não suporta iframes!</p>
+    </iframe>
+
+    
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, voluptatum, eveniet laborum dolore, tempora animi non eius unde adipisci eaque nihil praesentium? Saepe, placeat voluptatem. Vel quis ratione consectetur deleniti! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque quidem cum quos nesciunt in pariatur consequatur minima vitae ullam ratione, quae doloribus natus aliquam animi, eos voluptas beatae voluptate nobis!</p>
+</body>
+</html>
