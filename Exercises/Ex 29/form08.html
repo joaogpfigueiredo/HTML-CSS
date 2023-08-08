@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Formulários</title>
+</head>
+<body>
+    <h1>Teste de Formulários</h1>
+    <form action="cadastro.php" method="post" autocomplete="on">
+
+        <p>
+            <label for="idistrito">Distrito: </label>
+            <select name="distrito" id="idistrito">
+                <optgroup label="Principais Distritos">
+                    <option value="LB">Lisboa</option>
+                    <option value="PT">Porto</option>
+                    <option value="AV">Aveiro</option>
+                    <option value="CB" selected>Coimbra</option>
+                </optgroup>
+            </select>
+        </p>
+
+        <p>
+            <label for="iprof">Profissão: </label>
+            <input type="text" name="prof" id="iprof" list="lstprof">
+            <datalist id="lstprof">
+                <option value="ADM">Administrador</option>
+                <option value="INF">Informático</option>
+                <option value="CONT">Contabilista</option>
+                <option value="PROF">Professor</option>
+            </datalist>
+        </p>
+
+        <p>
+            <label for="imsg">Mensagem: </label> <br>
+            <textarea name="msg" id="imsg" cols="60" rows="15"></textarea>
+        </p>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
