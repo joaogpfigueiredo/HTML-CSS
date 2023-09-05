@@ -37,7 +37,7 @@ Big Screens - above 1200px
         border-radius: 20px 0px 0px 20px;
     }
 
-    section#login > div#login {
+    section#login > div#form {
         float: right;
         width: 70%;
     }
@@ -62,8 +62,17 @@ Big Screens - above 1200px
         border-radius: 0px 20px 20px 0px;
     }
 
-    section#login > div#login {
+    section#login > div#form {
         float: left;
+
         width: 55%;
+    }
+
+    section#login > div#form > h1 {
+        font-size: 2em;
+    }
+
+    section#login > div#form > p {
+        font-size: 1.2em;
     }
 }

@@ -51,7 +51,6 @@ section#login > div#image {
     background: url(../images/free-photo-of-campo-area-grama-panorama.jpeg) no-repeat;
     height: 200px;
     background-position: center center;
-    background-size: cover;
     border-radius: 20px 20px 0px 0px;
 }
 
