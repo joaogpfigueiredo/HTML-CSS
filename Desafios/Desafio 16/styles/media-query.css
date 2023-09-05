@@ -1,0 +1,69 @@
+@charset "UTF-8";
+
+:root {
+    --color1: #C2E693;
+    --color2: #A0E04C;
+    --color3: #7CAD3B;
+    --color4: #52613E;
+    --color5: #456121 ;
+}
+
+/* 
+Typical Device Breakpoints 
+--------------------------------
+Small Screens - up to 600px
+Smartphone - from 600px to 768px
+Tablet - from 768px to 992px 
+Desktop - from 992px to 1200px
+Big Screens - above 1200px
+*/
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+
+    html, body {
+        background-image: linear-gradient(to bottom, var(--color5), var(--color4), var(--color3), var(--color2));
+    }
+
+    section#login {
+        width: 80vw;
+    }
+    
+    section#login > div#image {
+        float: left;
+
+        width: 30%;
+        height: 100%;
+
+        border-radius: 20px 0px 0px 20px;
+    }
+
+    section#login > div#login {
+        float: right;
+        width: 70%;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    
+    html, body {
+        background-image: linear-gradient(to bottom, var(--color5), var(--color4), var(--color3), var(--color2));
+    }
+
+    section#login {
+        width: 950px;
+    }
+    
+    section#login > div#image {
+        float: left;
+
+        width: 45%;
+        height: 100%;
+
+        border-radius: 20px 0px 0px 20px;
+    }
+
+    section#login > div#login {
+        float: right;
+        width: 55%;
+    }
+}
