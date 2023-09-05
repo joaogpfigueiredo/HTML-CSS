@@ -21,7 +21,7 @@ Big Screens - above 1200px
 @media screen and (min-width: 768px) and (max-width: 992px) {
 
     html, body {
-        background-image: linear-gradient(to bottom, var(--color5), var(--color4), var(--color3), var(--color2));
+        background-image: linear-gradient(to bottom, var(--color5), var(--color4), var(--color3));
     }
 
     section#login {
@@ -46,7 +46,7 @@ Big Screens - above 1200px
 @media screen and (min-width: 992px) {
     
     html, body {
-        background-image: linear-gradient(to bottom, var(--color5), var(--color4), var(--color3), var(--color2));
+        background-image: linear-gradient(to bottom, var(--color5), var(--color4), var(--color3));
     }
 
     section#login {
@@ -54,16 +54,16 @@ Big Screens - above 1200px
     }
     
     section#login > div#image {
-        float: left;
+        float: right;
 
         width: 45%;
         height: 100%;
 
-        border-radius: 20px 0px 0px 20px;
+        border-radius: 0px 20px 20px 0px;
     }
 
     section#login > div#login {
-        float: right;
+        float: left;
         width: 55%;
     }
 }
