@@ -26,6 +26,7 @@ Big Screens - above 1200px
 
     section#login {
         width: 80vw;
+        height: 300px;
     }
     
     section#login > div#image {
@@ -51,6 +52,7 @@ Big Screens - above 1200px
 
     section#login {
         width: 950px;
+        height: 350px;
     }
     
     section#login > div#image {
@@ -74,5 +76,6 @@ Big Screens - above 1200px
 
     section#login > div#form > p {
         font-size: 1.2em;
+        margin: 20px 0px;
     }
 }

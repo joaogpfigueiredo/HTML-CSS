@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 :root {
-    --color1: #C2E693;
+    --color1: #7eab45;
     --color2: #A0E04C;
     --color3: #7CAD3B;
     --color4: #52613E;
@@ -41,10 +41,11 @@ section#login {
 
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
 
-    transition: width .3s, height .3s;
+    transition: width .5s, height .5s;
     transition-timing-function: is;
+    
+    transform: translate(-50%, -50%);
 }
 
 section#login > div#image {
@@ -68,4 +69,98 @@ section#login > div#form > h1 {
 section#login > div#form > p {
     text-align: justify;
     font-size: 0.8em;
+    margin: 10px 0px;
+}
+
+form > div.field {
+    background-color: var(--color3);
+
+    border: 2px solid var(--color3);
+
+    width: 100%;
+    height: 40px;
+
+    border-radius: 8px;
+    margin: 5px 0px;
+}
+
+form label {
+    display: none;
+} 
+
+div.field > span {
+    color: #ffffff;
+
+    font-size: 2em;
+
+    width: 40px;
+
+    padding: 5px;
+}
+
+div.field > input {
+    background-color: var(--color1);
+
+    font-size: 1em;
+
+    padding: 5px;
+
+    width: calc(100% - 46px);
+    height: 90%;
+
+    border: none;
+    border-radius: 8px;
+    
+    transform: translateY(-11.5px);
+}
+
+div.field > input:focus-within {
+    background-color: white;
+}
+
+form > input[type=submit] {
+    display: block;
+    font-size: 1em;
+
+    width: 100%;
+    height: 40px;
+
+    background-color: var(--color2);
+    color: #ffffff;
+
+    border: none;
+    border-radius: 5px;
+}
+
+form > input[type=submit]:hover {
+    background-color: var(--color1);
+    cursor: pointer;
+}
+
+form > a.button {
+    display: block;
+
+    text-decoration: none;
+    text-align: center;
+    font-size: 1em;
+
+    padding-top: 5px;
+    margin-top: 5px;
+
+    width: 100%;
+    height: 40px;
+
+    background-color: var(--color3);
+    color: white;
+
+    border-radius: 5px;
+    border: 1px solid var(--color2);
+}
+
+form > a.button > span {
+    font-size: 0.8em;
+}
+
+form > a.button:hover {
+    background-color: var(--color1);
 }
