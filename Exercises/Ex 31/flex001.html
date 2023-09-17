@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+    <title>FlexBox</title>
+    <style>
+        html, body {
+            background-image: linear-gradient(to left, #ffa600, #c29b53);
+        }
+
+        .conteiner > * {
+            background-color: rgba(255, 255, 255, 0.25);
+            border-radius: 3px;
+            border: 1px solid #fff;
+            color: #fff;
+            margin: 10px;
+            padding: 20px;
+            text-align: center;
+            transition: all 150ms ease;
+        }
+
+        .conteiner > *:hover {
+            background-color: rgba(255, 255, 255, 0.4);
+        }
+
+        .conteiner {
+            display: flex;
+        }
+    </style>
+</head>
+<body>
+    <div class="conteiner">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+    </div>
+</body>
+</html>
