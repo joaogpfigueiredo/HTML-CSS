@@ -30,14 +30,15 @@
 
             width: 800px;
 
-            border: 5px solid white;
+            border: 5px solid #fff;
         }
 
         .conteiner div {
-            margin: 0px;
+            margin: 0;
             padding: 20px 0px;
-            width: 100px;   
-            flex-grow: 1; /* default = 0 */         
+            /* flex-basis: 200px; auto = default */
+
+            flex: 1 1 100px; /* flex-grow flex-shrink flex-basis */
         }
     </style>
 </head>
