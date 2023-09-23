@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <title>FlexBox</title>
+    <style>
+        html, body {
+            background-image: linear-gradient(to left, #ffa600, #c29b53);
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .conteiner > * {
+            background-color: rgba(255, 255, 255, 0.25);
+            border-radius: 3px;
+            border: 1px solid #fff;
+            color: #fff;
+            margin: 10px;
+            padding: 20px;
+            text-align: center;
+            transition: all 150ms ease;
+        }
+
+        .conteiner > *:hover {
+            background-color: rgba(255, 255, 255, 0.4);
+        }
+
+        .weather {
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+            .weather > div {
+                margin: 10px 0px;                
+            }
+
+            .weather_period {
+                flex: 1;
+                font-size: 2em;
+                text-align: left;
+            }
+
+            .weather_icon {
+                font-size: 75px;
+            }
+
+            .weather_min {
+                font-weight: 700;
+            }
+
+            .weather_min::after {
+                content: ' - ';
+            }
+
+        @media (min-width: 768px) {
+            .weather {
+                align-items: center;
+                flex-direction: row;
+                justify-content: space-between;
+            }
+
+                .weather > div {
+                    margin: 0 50px;
+                }
+
+                .weather_period {
+                    flex: 1;
+                    font-size: 1.5em;
+                    min-width: 50px;
+                    text-align: left;
+                }
+
+                .weather_minmax {
+                    display: flex;
+                    flex-direction: column;
+                }
+                
+                .weather_min::after {
+                    content: '';
+                }
+        }
+
+        @media (min-width: 992px) {
+            .conteiner {
+                display: flex;
+                justify-content: center;
+            }
+
+            .weather {
+                flex-basis: 100px;
+                flex-direction: column;
+                flex-basis: 150px;
+            }
+
+                .weather > div {
+                    margin: 10px 0px;
+                }
+                
+                .weather_period {
+                    flex-basis: 50px;
+                }
+        }
+    </style>
+</head>
+<body>
+    <div class="conteiner">
+        <div class="weather">
+            <div class="weather_period">Manh&atilde;</div>
+            <div class="weather_icon">&#x1F329</div>
+            <div class="weather_minmax">
+                <span class="weather_min">16&ordm;</span>
+                <span class="weather_max">25&ordm;</span>
+            </div>
+            <div class="weather_hr">HR 85%</div>
+        </div>
+            
+            <div class="weather">
+                <div class="weather_period">Tarde</div>
+                <div class="weather_icon">&#x26C5</div>
+                <div class="weather_minmax">
+                    <span class="weather_min">19&ordm;</span>
+                    <span class="weather_max">26&ordm;</span>
+                </div>
+                <div class="weather_hr">HR 45%</div>
+            </div>
+            
+            <div class="weather">
+                <div class="weather_period">Noite</div>
+                <div class="weather_icon">&#x1F327</div>
+                <div class="weather_minmax">
+                    <span class="weather_min">18&ordm;</span>
+                    <span class="weather_max">25&ordm;</span>
+                </div>
+                <div class="weather_hr">HR 60%</div>
+            </div>
+            
+        <div class="weather">
+            <div class="weather_period">Madrugada</div>
+            <div class="weather_icon">&#x1F313</div>
+            <div class="weather_minmax">
+                <span class="weather_min">18&ordm;</span>
+                <span class="weather_max">26&ordm;</span>
+            </div>
+            <div class="weather_hr">HR 35%</div>
+        </div>
+</body>
+</html>

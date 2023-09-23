@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+    <title>FlexBox</title>
+    <style>
+        html, body {
+            background-image: linear-gradient(to left, #ffa600, #c29b53);
+        }
+
+        .conteiner > * {
+            background-color: rgba(255, 255, 255, 0.25);
+            border-radius: 3px;
+            border: 1px solid #fff;
+            color: #fff;
+            margin: 10px;
+            padding: 20px;
+            text-align: center;
+            transition: all 150ms ease;
+        }
+
+        .conteiner > *:hover {
+            background-color: rgba(255, 255, 255, 0.4);
+        }
+
+        .menu {
+            display: flex;
+            flex-wrap: wrap;
+            list-style-type: none;
+            margin: 0px;
+            padding: 0px;
+        }
+
+            .menu__item {
+                flex: 1 1 200px;
+                margin: 5px;
+                padding: 0px;
+
+                align-items: center;
+                justify-content: center;
+            }
+
+            .menu__link {
+                color: white;
+                display: block;
+                padding: 20px;
+                text-decoration: none;
+            }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul class="menu conteiner">
+            <li class="menu__item">
+                <a href="" class="menu__link">Inicio</a>
+            </li>
+            
+            <li class="menu__item">
+                <a href="" class="menu__link">Quem somos</a>
+            </li>
+            
+            <li class="menu__item">
+                <a href="" class="menu__link">Trabalhos</a>
+            </li>
+            
+            <li class="menu__item">
+                <a href="" class="menu__link">Contacto</a>
+            </li>
+            
+            <li class="menu__item">
+                <a href="" class="menu__link">Hobbies</a>
+            </li>
+            
+            <li class="menu__item">
+                <a href="" class="menu__link">Experimentos</a>
+            </li>
+        </ul>
+    </nav>
+</body>
+</html>

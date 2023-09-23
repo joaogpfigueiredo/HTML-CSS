@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+    <title>FlexBox</title>
+    <style>
+        html, body {
+            background-image: linear-gradient(to left, #ffa600, #c29b53);
+        }
+
+        .conteiner > * {
+            background-color: rgba(255, 255, 255, 0.25);
+            border-radius: 3px;
+            border: 1px solid #fff;
+            color: #fff;
+            margin: 10px;
+            padding: 20px;
+            text-align: center;
+            transition: all 150ms ease;
+        }
+
+        .conteiner > *:hover {
+            background-color: rgba(255, 255, 255, 0.4);
+        }
+
+        .conteiner {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        .conteiner main {
+            flex: 1;
+            background-color: transparent;
+            border: none;
+        }
+    </style>
+</head>
+<body class="conteiner">
+    <header>HEADER</header>
+
+    <main>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus provident beatae sapiente est, reiciendis odio veritatis soluta sunt! Et quasi maxime repellendus voluptate facere porro eaque, vitae excepturi nemo in! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis, neque libero similique amet ad sunt exercitationem et consequatur. Sequi quidem aut aperiam iste repellat ullam quas minus nemo quo blanditiis.</main>
+
+    <footer>FOOTER</footer>
+</body>
+</html>

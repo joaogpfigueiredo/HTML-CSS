@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+    <title>FlexBox</title>
+    <style>
+        html, body {
+            background-image: linear-gradient(to left, #ffa600, #c29b53);
+        }
+
+        .conteiner > * {
+            background-color: rgba(255, 255, 255, 0.25);
+            border-radius: 3px;
+            border: 1px solid #fff;
+            color: #fff;
+            margin: 10px;
+            padding: 20px;
+            text-align: center;
+            transition: all 150ms ease;
+        }
+
+        .conteiner > *:hover {
+            background-color: rgba(255, 255, 255, 0.4);
+        }
+
+        body.conteiner {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        .content {
+            display: flex;
+            flex: 1;
+            flex-direction: column;
+        }
+
+        .main {
+            flex: 1;
+        }
+
+        .sidebar, .ads {
+            flex-basis: 100px;
+        }
+
+        @media (min-width: 900px) {
+            .content {
+                flex-direction: row;
+            }
+
+
+            .sidebar {
+                order: -1;
+            }
+        }
+    </style>
+</head>
+<body class="conteiner">
+    <header class="header">HEADER</header>
+
+    <div class="content conteiner">
+        <main class="main">CONTENT</main>
+        <aside class="sidebar">SideBar</aside>
+        <aside class="ads">Ads</aside>
+    </div>
+
+    <footer class="footer">FOOTER</footer>
+</body>
+</html>
